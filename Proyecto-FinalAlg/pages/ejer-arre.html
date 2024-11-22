@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/esti-ejer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Ejercicios de bucles</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/inter.html">
+                <img src="../img/Orion.jpeg" alt="Imagen no encontrada" width="90px">
+            </a>
+            <h3>Next Programming</h3>
+          </div>
+    </header>
+    <main>
+        <h1>Ejercicios de Cadenas</h1>
+        <section id="ejercicio1" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 1</h3>
+                <p class="kira">Dado un arreglo de 10 números generados aleatoriamente recorrer el arreglo y presentar cada número del arreglo.</p>
+                <div>
+                    <button class="bot" type="button" onclick="practica_1()">Generar arreglo</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu1">Resultado:</label>
+                    <textarea id="respu1">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio2" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 2</h3>
+                <p class="kira">Promedio de calificaciones: Calcular el promedio de cinco calificaciones ingresadas por el usuario.</p>
+                <div>
+                    <label for="prome1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="prome1" placeholder="Ingrese los promedios">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_2()">Generar promedio</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu2">Resultado:</label>
+                    <textarea id="respu2">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio3" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 3</h3>
+                <p class="kira">Encontrar el máximo de una lista de números: Encontrar el número más grande en una lista de números.</p>
+                <div>
+                    <label for="maxi1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="maxi1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_3()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu3">Resultado:</label>
+                    <textarea id="respu3">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio4" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 4</h3>
+                <p class="kira">Encontrar el promedio de números mayores a un valor dado: Calcular el promedio de los números mayores a un valor límite en un arreglo.</p>
+                <div>
+                    <label for="proma1">Ingrese los numeros separados por un " , ":</label>
+                    <input type="text" id="proma1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <label for="mare1">Ingrese el numero limite:</label>
+                    <input type="text" id="mare1" placeholder="Ingrese el limite">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_4()">Generar promedio</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu4">Resultado:</label>
+                    <textarea id="respu4">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio5" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 5</h3>
+                <p class="kira">Encontrar el mínimo de un arreglo de números: Encontrar el número más pequeño de un arreglo.</p>
+                <div>
+                    <label for="meno1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="meno1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_5()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu5">Resultado:</label>
+                    <textarea id="respu5">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio6" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 6</h3>
+                <p class="kira">Promedio de números pares de un arreglo: Calcular el promedio de los números pares en un arreglo de 10 números.</p>
+                <div>
+                    <label for="propa1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="propa1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_6()">Generar promedio</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu6">Resultado:</label>
+                    <textarea id="respu6">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio7" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 7</h3>
+                <p class="kira">Arreglo suma dígitos: Almacenar los dígitos de un número en un arreglo y luego calcular la suma de los dígitos.</p>
+                <div>
+                    <label for="asu1">Numero:</label>
+                    <input type="text" id="asu1" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_7()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu7">Resultado:</label>
+                    <textarea id="respu7">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio8" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 8</h3>
+                <p class="kira">Contar y sumar números positivos y negativos: Contar y sumar cuántos de 10 números ingresados son positivos o negativos.</p>
+                <div>
+                    <label for="cosu1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="cosu1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_8()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu8">Resultado:</label>
+                    <textarea id="respu8">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio9" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 9</h3>
+                <p class="kira">Dado un arreglo de números crear otro arreglo con el cuadrado de cada elemento del primer arreglo.</p>
+                <div>
+                    <label for="pria1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="pria1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_9()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu9">Resultado:</label>
+                    <textarea id="respu9">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio10" class="sim">
+            <form class="fn" action="./arreglos.html">
+                <h3>Ejercicio 10</h3>
+                <p class="kira">Dado dos arreglos con la misma dimensión crear otro arreglo con la suma de cada elemento del arreglo1 con el arreglo2 en el orden de la misma posición.</p>
+                <div>
+                    <label for="arregl1">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="arregl1" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <label for="arregl2">Ingrese los numeros separados por una coma " , ":</label>
+                    <input type="text" id="arregl2" placeholder="Ingrese los numeros">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_10()">Generar arreglo</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu10">Resultado:</label>
+                    <textarea id="respu10">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/ejr-arre.js"></script> 
+    <script>
+        // Obtiene el hash de la URL (por ejemplo, #ejercicio1)
+        const hash = window.location.hash;
+    
+        // Oculta todas las secciones
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none'; // Oculta las secciones
+        });
+    
+        // Muestra la sección correspondiente al hash si existe
+        if (hash) {
+            const sectionToShow = document.querySelector(hash);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block'; // Muestra solo esta sección
+            } else {
+                console.warn("Sección no encontrada:", hash); // Mensaje de advertencia si el hash no coincide
+            }
+        }
+    </script>
+    <footer>
+        <h5>Next Programming - Derechos Reservados <span>Corporacion N.P.</span></h5>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/esti-ejer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Ejercicios de bucles</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/inter.html">
+                <img src="../img/Orion.jpeg" alt="Imagen no encontrada" width="90px">
+            </a>
+            <h3>Next Programming</h3>
+          </div>
+    </header>
+    <main>
+        <h1>Ejercicios de Numeros</h1>
+        <section id="ejercicio1" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 1</h3>
+                <p class="kira">Imprimir numeros impares: Imprimir todos los numeros impares entre 1 y 50.</p>
+                <div>
+                    <label for="num1">Numero:</label>
+                    <input type="number" id="num1" value="1" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <label for="num2">Numero:</label>
+                    <input type="number" id="num2" value="50" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_1()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu1">Resultado:</label>
+                    <textarea id="respu1">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio2" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 2</h3>
+                <p class="kira">Calcular la suma de los primeros 100 numeros: Sumar todos los numeros del 1 al 100.</p>
+                <div>
+                    <label for="numer1">Numero:</label>
+                    <input type="number" id="numer1" value="1" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <label for="numer2">Numero:</label>
+                    <input type="number" id="numer2" value="100" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_2()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu2">Resultado:</label>
+                    <textarea id="respu2">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio3" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 3</h3>
+                <p class="kira">Suma de numeros pares: Sumar todos los numeros pares desde 1 hasta un numero dado por el usuario.</p>
+                <div>
+                    <label for="par1">Numero:</label>
+                    <input type="number" id="par1" value="1" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <label for="par2">Numero:</label>
+                    <input type="number" id="par2" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_3()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu3">Resultado:</label>
+                    <textarea id="respu3">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio4" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 4</h3>
+                <p class="kira">Numero divisibles por 3 y 5: Imprimir todos los numeros del 1 al 100 que sean divisbles por 3 y 5.</p>
+                <div>
+                    <label for="divi1">Numero:</label>
+                    <input type="number" id="divi1" value="3" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <label for="divi2">Numero:</label>
+                    <input type="number" id="divi2" value="5" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_4()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu4">Resultado:</label>
+                    <textarea id="respu4">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio5" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 5</h3>
+                <p class="kira">Generar la tabla de multiplicar: Generar la tabla de multiplicar de un numero ingresado por el usuario.</p>
+                <div>
+                    <label for="mul1">Numero:</label>
+                    <input type="number" id="mul1" value="" placeholder="Ingrese el numero a multiplicar">
+                </div>
+                <div>
+                    <label for="lim2">Numero:</label>
+                    <input type="number" id="lim2" value="" placeholder="Ingrese un numero limite para la tabla">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_5()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu5">Resultado:</label>
+                    <textarea id="respu5">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio6" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 6</h3>
+                <p class="kira">Numeros Fibonacci: Imprimir los primeros n numeros de la serie de Fibonacci. Ejemplo: Si n=7 la serie es: 0 1 1 2 3 4 5 8</p>
+                <div>
+                    <label for="n">Numero:</label>
+                    <input type="number" id="n" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_6()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu6">Resultado:</label>
+                    <textarea id="respu6">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio7" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 7</h3>
+                <p class="kira">Calcular la multiplicacion de n numeros: Multiplicar todos los numeros del 1 al 10</p>
+                <div>
+                    <label for="multi1">Numero:</label>
+                    <input type="number" id="multi1" value="1" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <label for="multi2">Numero:</label>
+                    <input type="number" id="multi2" value="10" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_7()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu7">Resultado:</label>
+                    <textarea id="respu7">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio8" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 8</h3>
+                <p class="kira">Factorial de un numero: Calcular el factorial de un numero dado por el usuario. Num=5 = resp=5*4*3*2*1=120</p>
+                <div>
+                    <label for="cal1">Numero:</label>
+                    <input type="number" id="cal1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_8()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu8">Resultado:</label>
+                    <textarea id="respu8">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio9" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 9</h3>
+                <p class="kira">Imprimir multiplos de un numero: Imprimir todos los numeros divisibles de un numero dado entre 1 y 20.</p>
+                <div>
+                    <label for="imp1">Numero:</label>
+                    <input type="number" id="imp1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_9()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu9">Resultado:</label>
+                    <textarea id="respu9">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio10" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 10</h3>
+                <p class="kira">Presentar los divisores de un numero: Mostrar los divisores de un numero excluyendo el propio numero.</p>
+                <div>
+                    <label for="pro1">Numero:</label>
+                    <input type="number" id="pro1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_10()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu10">Resultado:</label>
+                    <textarea id="respu10">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio11" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 11</h3>
+                <p class="kira">Numero perfecto: Verificar si un numero es perfecto (la suma de sus divisores excluyendo el numero dea como resultado el propio numero).</p>
+                <div>
+                    <label for="per1">Numero:</label>
+                    <input type="number" id="per1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_11()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu11">Resultado:</label>
+                    <textarea id="respu11">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio12" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 12</h3>
+                <p class="kira">Comprobacion de numeros primos: Verificar si un numero dado es primo.</p>
+                <div>
+                    <label for="prim1">Numero:</label>
+                    <input type="number" id="prim1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_12()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu12">Resultado:</label>
+                    <textarea id="respu12">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio13" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 13</h3>
+                <p class="kira">Invertir un numero: Invertir los digitos de un numero ingresado por el usuario.</p>
+                <div>
+                    <label for="inv1">Numero:</label>
+                    <input type="number" id="inv1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_13()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu13">Resultado:</label>
+                    <textarea id="respu13">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section> 
+        <section id="ejercicio14" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 14</h3>
+                <p class="kira">Numero de digitos de un numero: Contar cuantos digitos tiene un numero entero positivo.</p>
+                <div>
+                    <label for="cont1">Numero:</label>
+                    <input type="number" id="cont1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_14()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu14">Resultado:</label>
+                    <textarea id="respu14">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio15" class="sim">
+            <form class="fn" action="./numeros.html">
+                <h3>Ejercicio 15</h3>
+                <p class="kira">Dibujo de un triangulo de asteriscos: Imprimir un triangulo de asteriscos de altura n tal como se indica.</p>
+                <div>
+                    <label for="aste1">Numero:</label>
+                    <input type="number" id="aste1" value="" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="ejercicio_15()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu15">Resultado:</label>
+                    <textarea id="respu15">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div> 
+            </form>
+        </section>
+    </main>
+    <script src="../js/ejr-num.js"></script> 
+    <script>
+        // Obtiene el hash de la URL (por ejemplo, #ejercicio1)
+        const hash = window.location.hash;
+    
+        // Oculta todas las secciones
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none'; // Oculta las secciones
+        });
+    
+        // Muestra la sección correspondiente al hash si existe
+        if (hash) {
+            const sectionToShow = document.querySelector(hash);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block'; // Muestra solo esta sección
+            } else {
+                console.warn("Sección no encontrada:", hash); // Mensaje de advertencia si el hash no coincide
+            }
+        }
+    </script>
+    <footer>
+        <h5>Next Programming - Derechos Reservados <span>Corporacion N.P.</span></h5>
+    </footer>
+</body>
+</html>
