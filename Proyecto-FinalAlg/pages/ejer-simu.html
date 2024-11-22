@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/esti-ejer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Prueba de Algortimo</title>
+</head>
+<body>
+    <header>
+        <div>
+          <a href="../inter.html">
+              <img src="../img/Orion.jpeg" alt="Imagen no encontrada" width="90px">
+          </a>
+          <h3>Next Programming</h3>
+        </div>
+          <nav>
+              <ul> 
+                  <li><a href="#acerca"><h4>Acerca de</h4></a></li>
+              </ul>
+          </nav>
+      </header>
+      <main>
+        <h1>Simulador</h1>
+        <section id="ejercicio1" class="sim">
+            <form class="dv" id="quesForm" action="simulador.html">
+                <h3>Ejercicio 1</h3>
+                <img src="../img/img16.png" alt="Imagen no encontrada" width="630px" class="pse">
+                <div class="simu">
+                    <p class="kira">Selecciones la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. 1A,2B,3D,4C</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. 1A,2D,3B,4C</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. 1B,2C,3D,4A</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. 1B,2C,3A,4D</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_1()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="resultado1"></p>
+        </section>
+        <section id="ejercicio2">
+            <form class="bc" action="simulador.html">
+                <h3>Ejercicio 2</h3>
+                <div>
+                    <label for="ctele">Cantidad de televisores:</label>
+                    <input type="number" id="ctele"  placeholder="¿Cuantos televisores va a comprar?">
+                    <label class="di" for="pretele">Precio:</label>
+                    <input type="number" id="pretele"  placeholder="¿Cual es el precio del producto?">
+                </div>
+                <div>
+                    <label for="crefri">Cantidad de refrigeradores:</label>
+                    <input type="number" id="crefri" placeholder="¿Cuantas refrigeradoras va a comprar?">
+                    <label class="di" for="prerefri">Precio:</label>
+                    <input type="number" id="prerefri"  placeholder="¿Cual es el precio del producto?">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="Ejercicio_2()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu">Resultado:</label>
+                    <textarea id="respu2">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio3">
+            <form class="ls" action="simulador.html">
+                <h3>Ejercicio 3</h3>
+                <p class="kira">Crea una funcion en Pseint o Javascript que imprima todos los numeros del 1 al 50 que sean divisibles por 3 y 7, y al final muestre la suma de los numeros pares y la suma de los impares. Usa un bucle para iterar a traves de los numeros y condiciones para verificar la divisibilidad</p>
+                <div>
+                    <label for="num1">Divisibles:</label>
+                    <input type="number" id="num1" value="3">
+                </div>
+                <div>
+                    <label for="num2">Divisibles:</label>
+                    <input type="number" id="num2" value="7">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="Ejercicio_3()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu">Resultado:</label>
+                    <textarea id="respu3">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio4" class="sim">
+            <form class="ps" id="questionForm" action="simulador.html">
+                <h3>Ejercicio 4</h3>
+                <p class="kira">¿Cuál es la diferencia principal entre el operador AND y el operador OR en una expresión condicional?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. AND solo puede usarse con números, mientras que OR solo con cadenas.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. AND evalúa solo una condición, mientras que OR evalúa todas.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. AND devuelve verdadero solo si todas las condiciones son verdaderas, mientras que OR devuelve verdadero si al menos una condición es verdadera.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. No hay ninguna diferencia, ambos operadores se comportan de la misma manera.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_4()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu4"></p>
+        </section>
+        <section id="ejercicio5" class="sim">
+            <form class="ps" id="questForm" action="simulador.html">
+                <h3>Ejercicio 5</h3>
+                <p class="kira">Si un estudiante debe cursar 3 materias en el semeste, y cada una requiere 4 horas de estudio semanales,¿Cuantas horas en total necesitara estudiar en una semana?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 10 horas</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 8 horas</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 12 horas</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 16 horas</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_5()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu5"></p>
+        </section> 
+        <section id="ejercicio6" class="sim">
+            <form class="ps" id="quesForm6" action="simulador.html">
+                <h3>Ejercicio 6</h3>
+                <p class="kira">¿Cual es una ventaja de utilizar expresiones logicas compuestas en una estructura condicional?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Reducen la cantidad de codigo necesario al eliminar condiciones.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Aseguran que el programa sea mas rapido, ya que evaluan todas las condiciones a la vez.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Permiten evaluar varias condicionales al mismo tiempo y tomar decisiones mas complejas en el programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Evitan la necesidad de usar estructuras repetitivas como bucles.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_6()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu6"></p>
+        </section>
+        <section id="ejercicio7" class="sim">
+            <form class="ps" id="quesForm7" action="simulador.html">
+                <h3>Ejercicio 7</h3>
+                <p class="kira">¿Que tecnica de abstraccion es util al dividir un problema en multiples subproblemas para su resolucion en un programa?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Uso de diagramas de flujo detallados.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Implementacion de un ciclo de repeticion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Descomposicion modular o "divide y venceras".</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Creacion de un modelo grafico de alta precision.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_7()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu7"></p>
+        </section>
+        <section id="ejercicio8" class="sim">
+            <form class="ps" id="quesForm8" action="simulador.html">
+                <h3>Ejercicio 8</h3>
+                <p class="kira">En la metodologia de Entrada-Proceso-Salida (E-P-S),¿Que describe mejor la fase de "Proceso"?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Almacenar temporalmente los datos.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Presentar el resultado final al usuario.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Realizar calculos y transformar datos para obtener el resultado.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Capturar datos de entrada.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_8()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu8"></p>
+        </section>
+        <section id="ejercicio9" class="sim">
+            <form class="ps" id="quesForm9" action="simulador.html">
+                <h3>Ejercicio 9</h3>
+                <p class="kira">¿Como se define una funcion que muestra un mensaje en la consola sin devolver un valor?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) funcion MostrarMensaje (mensaje)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) procedimiento MostrarMensaje (mensaje)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) funcion sin retorno MostrarMensaje (mensaje)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) subproceso MostrarMensaje (mensaje)</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_9()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu9"></p>
+        </section> 
+        <section id="ejercicio10" class="sim">
+            <form class="ps" id="quesForm10" action="simulador.html">
+                <h3>Ejercicio 10</h3>
+                <p class="kira">¿Que palabra clave se utiliza para devolver un valor en una funcion con retorno en PSeInt?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) devuelve</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) retorna</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) variable=</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) salir</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_10()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu10"></p>
+        </section> 
+        <section id="ejercicio11" class="sim">
+            <form class="fn" id="quesForm11" action="simulador.html">
+                <h3>Ejercicio 11</h3>
+                <img src="../img/img1.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) Imprime el cuadrado de los numeros del 1 al 3.</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) Imprime los numeros del 1 al 3.</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) Imprime el cubo de los numeros del 1 al 3.</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) Imprime los numeros pares del 1 al 3.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_11()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu11"></p>
+        </section>
+        <section id="ejercicio12" class="sim">
+            <form class="fn" id="quesForm12" action="simulador.html">
+                <h3>Ejercicio 12</h3>
+                <img src="../img/img2.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 1 2 3 4 5</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 0 1 2 3 4 5</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 1 2 3 4 5 6</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 1 2 3 4</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_12()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu12"></p>
+        </section> 
+        <section id="ejercicio13" class="sim">
+            <form class="em" id="quesForm13" action="simulador.html">
+                <h3>Ejercicio 13</h3>
+                <p class="kira">Dado el siguiente diagrama de flujo, siga la secuencia logica de las instrucciones e indique cual de las siguientes salidas es la correcta respecto a todos los valores que van tomando las variables: A,B,C.</p>
+                <img src="../img/img3.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="csc">
+                    <div class="columna">
+                        <input type="radio" name="option" value="a">
+                        <span>   3 4 15</span>
+                        <span>   4 5 33</span>
+                        <span>a. 5 6 54</span>
+                        <span>   6 7 77</span>
+                    </div>
+                    <div class="columna">
+                        <input type="radio" name="option" value="b">
+                        <span>   3 4 15</span>
+                        <span>   3 5 33</span>
+                        <span>b. 3 6 54</span>
+                        <span>   3 7 78</span>
+                    </div>
+                    <div class="columna">
+                        <input type="radio" name="option" value="c">
+                        <span>   3 4 15</span>
+                        <span>   4 5 33</span>
+                        <span>c. 5 6 54</span>
+                        <span>   6 7 70</span>
+                    </div>
+                    <div class="columna">
+                        <input type="radio" name="option" value="d">
+                        <span>   3 4 15</span>
+                        <span>   3 5 33</span>
+                        <span>d. 3 6 53</span>
+                        <span>   3 7 77</span>
+                    </div>
+                </div>
+                <button class="pr" type="button" onclick="Ejercicio_13()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu13"></p>
+        </section> 
+        <section id="ejercicio14" class="sim">
+            <form class="hp" id="quesForm14" action="simulador.html">
+                <h3>Ejercicio 14</h3>
+                <p class="kira">Dado el siguiente diagrama de flujo, realice la prueba de escritorio y selecciones el enunciado correcto:</p>
+                <img src="../img/img4.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. Diagrama de flujo que presenta el numero mayor</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. Diagrama de flujo que presenta el numero menor</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. Diagrama de flujo que presenta el numero menor y mayor</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. Diagrama de flujo que presenta el numero mayor y menor</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_14()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu14"></p>
+        </section>
+        <section id="ejercicio15" class="sim">
+            <form class="ps" id="quesForm15" action="simulador.html">
+                <h3>Ejercicio 15</h3>
+                <p class="kira">¿Cual es el proposito principal de la abstraccion Entrada-Proceso-Salida en el desarrollo de software?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Garantizar que el programa cumpla con las normativas legales.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Crear el codigo necesario para la interfaz de usuario.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Reducir el numero de pruebas necesarias.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Dividir el problema en partes que puedan analizarse por separado.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_15()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu15"></p>
+        </section>
+        <section id="ejercicio16" class="sim">
+            <form class="ps" id="quesForm16" action="simulador.html">
+                <h3>Ejercicio 16</h3>
+                <p class="kira">¿Que se entiende por"corto circuito" en una evaluacion de una expresion condicional compuesta con operadores logicos?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span class="ni">a. Es cuando la evaluacion de una expresion condicional se detiene tan pronto como se detiene tan pronto como se determina el resultado, sin evaluar las demas condiciones.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Es una tecnica para optimizar el tiempo de ejecucion en bucles.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Es el proceso de evaluar todas las condiciones en una expresion logica independientemente del resultado de las primeras.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Es cuando se combinan operadores logicos AND y OR en una misma expresion.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_16()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu16"></p>
+        </section>
+        <section id="ejercicio17" class="sim">
+            <form class="ps" id="quesForm17" action="simulador.html">
+                <h3>Ejercicio 17</h3>
+                <p class="kira">¿Cual de las siguientes tecnicas es fundamental para el desarrollo de un modelo abstracto?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Pruebas de estres.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Diseño visual.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Analisis de requerimientos.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Complicacion del codigo.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_17()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu17"></p>
+        </section> 
+        <section id="ejercicio18" class="sim">
+            <form class="ps" id="quesForm18" action="simulador.html">
+                <h3>Ejercicio 18</h3>
+                <p class="kira">¿Que es un pseudocodigo?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span class="ni">a. Un diagrama que muesta el flujo de datos dentro de un sistema.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span class="ni">b. Una representacion simplificada y estructurada de un algoritmo que utiliza lenguaje intermedio entre el lenguaje humano y el lenguaje de programacion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span class="ni">c. El codigo fuente final de un programa que puede ejecutarse directamente en una maquina.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span class="ni">d. Un lenguaje de programacion que es interpretado por el compilador.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_18()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu18"></p>
+        </section>
+        <section id="ejercicio19" class="sim">
+            <form class="ps" id="quesForm19" action="simulador.html">
+                <h3>Ejercicio 19</h3>
+                <p class="kira">¿Cual de las siguientes afirmaciones sobre la complejidad algoritmica es correcta?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span class="ni">a. La complejidad algoritmica solo se refiere al numero de lineas de codigo.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. La complejidad algoritmica siempre es constante sin importar el tamaño del problema.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. La complejidad algoritmica mide los recursos computacionales (tiempo y espacio) que un algoritmo necesita para ejecutarse.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. La complejidad algortimica solo aplica a algoritmos iterativos.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_19()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu19"></p>
+        </section>
+        <section id="ejercicio20" class="sim">
+            <form class="ps" id="quesForm20" action="simulador.html">
+                <h3>Ejercicio 20</h3>
+                <p class="kira">¿Cual es el proposito principal de una constante en un programa?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Proporcionar valores fijos que no cambian.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Definir la estructura del programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Controlar el flujo de ejecucion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Permitir valores modificables que cambian durante la ejecucion.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_20()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu20"></p>
+        </section> 
+        <section id="ejercicio21" class="sim">
+            <form class="ps" id="quesForm21" action="simulador.html">
+                <h3>Ejercicio 21</h3>
+                <p class="kira">Si tienes la siguiente funcion: <img src="../img/img5.png" alt="Imagen no encontrada" width="270px">,¿Que se obtiene al llamarla con <img src="../img/img6.png" alt="Imagen no encontrada" width="110px">?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 10</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 25</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 5</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 50</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_21()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu21"></p>
+        </section> 
+        <section id="ejercicio22" class="sim">
+            <form class="ps" id="quesForm22" action="simulador.html">
+                <h3>Ejercicio 22</h3>
+                <p class="kira">¿Cual es la salida si llamamos a la funcion <img src="../img/img7.png" alt="Imagen no encontrada" width="120px">? <img src="../img/img8.png" alt="Imagen no encontrada" width="290px"></p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 10</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 6</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 4</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 14</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_22()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu22"></p>
+        </section> 
+        <section id="ejercicio23" class="sim">
+            <form class="tn" id="quesForm23" action="simulador.html">
+                <h3>Ejercicio 23</h3>
+                <img src="../img/img10.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 8</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 13</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 5</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 21</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_23()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu23"></p>
+        </section>
+        <section id="ejercicio24" class="sim">
+            <form class="fn" id="quesForm24" action="simulador.html">
+                <h3>Ejercicio 24</h3>
+                <img src="../img/img11.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 9</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 15</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 10</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 6</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_24()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu24"></p>
+        </section>
+        <section id="ejercicio25" class="sim">
+            <form class="dm" id="quesForm25" action="simulador.html">
+                <h3>Ejercicio 25</h3>
+                <p class="kira">El siguiente algoritmo presenta la suma de los digitos de cualquier numero entero</p>
+                <img src="../img/img12.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p>Indique la linea o lineas que hace el algoritmo no funcione correctamente</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. 4</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. 5</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. 5,6</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. 6,7</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_25()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu25"></p>
+        </section>
+        <section id="ejercicio26" class="sim">
+            <form class="tn" id="quesForm26" action="simulador.html">
+                <h3>Ejercicio 26</h3>
+                <p class="kira">El siguiente algoritmo crea una funcion en JS que presente el mayor de los numeros de un arreglo de 10 elementos</p>
+                <img src="../img/img13.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. 8</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. 11</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. 10</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. 12</span>
+                    </div>
+                </div>
+                <button class="as" type="button" onclick="Ejercicio_26()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu26"></p>
+        </section>
+        <section id="ejercicio27" class="sim">
+            <form class="ps" id="quesForm27" action="simulador.html">
+                <h3>Ejercicio 27</h3>
+                <p class="kira">¿Cual de las siguientes afirmaciones es verdadera sobre el uso de operadores logicos en estructuras logicas en estructuras condicionales?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. El operador NOT invierte el valor logico de una condicion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. El operador AND devuelve verdadero si al menos una condicion es verdadera.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. El operador OR devuelve verdadero solo si todas las condiciones son verdaderas.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. El operador XOR siempre devuelve verdadero si ambas condiciones son iguales.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_27()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu27"></p>
+        </section>
+        <section id="ejercicio28" class="sim">
+            <form class="bc" id="quesForm28" action="simulador.html">
+                <h3>Ejercicio 28</h3>
+                <p class="kira">Un repartidor debe entregar un paquete en 3 diferentes ubicaciones. Si el tiempo promedio de entrega en cada ubicacion es de 15 minutos,¿Cuanto tiempo total le tomara hacer las entregas?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 30 minutos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 45 minutos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 50 minutos</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 60 minutos</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_28()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu28"></p>
+        </section>  
+        <section id="ejercicio29" class="sim">
+            <form class="ps" id="quesForm29" action="simulador.html">
+                <h3>Ejercicio 29</h3>
+                <p class="kira">¿Que sucede si no se respetan las prioridades entre operadores logicos en una expresion condicional?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. La expresion siempre dara como resultado "falso" en lugar de "verdadero".</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. La expresion puede evaluarse incorrectamente, dando resultados inesperados.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. No afecta la evaluacion, ya que los operadores tienen la misma prioridad.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. La expresion fallara y causara un error de ejecucion.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_29()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu29"></p>
+        </section>
+        <section id="ejercicio30" class="sim">
+            <form class="ps" id="quesForm30" action="simulador.html">
+                <h3>Ejercicio 30</h3>
+                <p class="kira">¿Cual es el objetivo de la optimizacion de algoritmos?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Aumentar el numero de pasos en un algortimo para hacerlo mas preciso.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Reducir el uso de recursos como tiempo de ejecucion o espacio en memoria.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Evitar el uso de pseudocodigo en la descripcion del algoritmo.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Eliminar todas las estructuras de control de un algoritmo.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_30()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu30"></p>
+        </section>
+        <section id="ejercicio31" class="sim">
+            <form class="ps" id="quesForm31" action="simulador.html">
+                <h3>Ejercicio 31</h3>
+                <p class="kira">¿Cual de las siguientes NO es un tipo comun de estructura de control en un algortimo?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Secuencial</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Condicinal</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Ciclica (Bucles)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Evaluacion recursiva</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_31()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu31"></p>
+        </section>
+        <section id="ejercicio32" class="sim">
+            <form class="ps" id="quesForm32" action="simulador.html">
+                <h3>Ejercicio 32</h3>
+                <p class="kira">¿Que se entiende por "mejora continua" en el contexto de desarrollo de software?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Realizar ajustes y mejoras periodicas para optimizar el codigo y satisfacer mejor los requesitos.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Cambiar el lenguaje de programacion regularmente.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Reestructurar el programa despues de cada prueba.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Añadir constantemente nuevas caracteristicas al programa.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_32()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu32"></p>
+        </section>
+        <section id="ejercicio33" class="sim">
+            <form class="ps" id="quesForm33" action="simulador.html">
+                <h3>Ejercicio 33</h3>
+                <p class="kira">¿Cual es la forma correcta de definir una funcion que no devuelve un valor PSeInt?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) funcion nombreFuncion(par1,par2)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) proceso nombreFuncion(par1,par2)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) procedimiento nombreFuncion(par1,par2)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) funcion sin retorno nombreFuncion(par1,par2)</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_33()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu33"></p>
+        </section>
+        <section id="ejercicio34" class="sim">
+            <form class="ls" id="quesForm34" action="simulador.html">
+                <h3>Ejercicio 34</h3>
+                <img src="../img/img14.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) true</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) false</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) undefined</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) Error de ejecucion</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_34()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu34"></p>
+        </section>
+        <section id="ejercicio35" class="sim">
+            <form class="fe" id="quesForm35" action="simulador.html">
+                <h3>Ejercicio 35</h3>
+                <img src="../img/img15.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 30</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 25</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 20</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 35</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_35()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu35"></p>
+        </section>
+        <section id="ejercicio36" class="sim">
+            <form class="ps" id="quesForm36" action="simulador.html">
+                <h3>Ejercicio 36</h3>
+                <p class="kira">¿Cual es la funcion principal de los parentesis en una expresion logica que contiene operadores AND y OR?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span class="ni">a. Los parentesis solo se utilizan en bucles, no en expresiones condicionales.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Los parentesis se utilizan para agrupar condiciones y establecer la prioridad en la evaluacion de la expresion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Los parentesis se utilizan para simplificar la expresion logica eliminando operadores innecesarios.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Los parentesis permiten que ña expresion se evalue mas rapidamente.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_36()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu36"></p>
+        </section>
+        <section id="ejercicio37" class="sim">
+            <form class="ps" id="quesForm37" action="simulador.html">
+                <h3>Ejercicio 37</h3>
+                <p class="kira">En un restaurante, cada plato tiene un costo de $12. Si un cliente pide 3 platos, ¿Cual sera el costo total de su pedido?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 30 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 48 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 24 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 36 dolares</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_37()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu37"></p>
+        </section>
+        <section id="ejercicio38" class="sim">
+            <form class="ps" id="quesForm38" action="simulador.html">
+                <h3>Ejercicio 38</h3>
+                <p class="kira">¿Cual de las siguientes opciones describe un pseudocodigo?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Un diagrama de flujo simplificado que representa un algoritmo.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Un software usado para crear programas en diferentes lenguajes.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Una descripcion estructurada y detallada de los pasos de un algoritmo.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Un lenguaje de programacion especifico utilizado solo para el desarrollo web.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_38()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu38"></p>
+        </section>
+        <section id="ejercicio39" class="sim">
+            <form class="ps" id="quesForm39" action="simulador.html">
+                <h3>Ejercicio 39</h3>
+                <p class="kira">¿Cual es el principal objetivo de la depuracion (debugging) en programacion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Identificar y corregir errores en el codigo fuente.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Generar un informe detallado del rendimiento del programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Optimizar el rendimiento de un programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Escribir codigo mas rapido y eficiente.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_39()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu39"></p>
+        </section>
+        <section id="ejercicio40" class="sim">
+            <form class="ps" id="quesForm40" action="simulador.html">
+                <h3>Ejercicio 40</h3>
+                <p class="kira">¿Que se entiende por analisis de requerimientos en el contexto de la programacion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Diseñar la estructura visual del software.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Identificar y documentar que necesita el programa para resolver un problema.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Escribir el codigo necesario para el programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Probar todas las funcionalidades del software.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_40()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu40"></p>
+        </section>
+        <section id="ejercicio41" class="sim">
+            <form class="ps" id="quesForm41" action="simulador.html">
+                <h3>Ejercicio 41</h3>
+                <p class="kira">En un diagrama de flujo, ¿Que figura geometrica se utiliza para representar una decision o condicion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Rombo</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Triangulo</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Rectangulo</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Circulo</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_41()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu41"></p>
+        </section>
+        <section id="ejercicio42" class="sim">
+            <form class="ps" id="quesForm42" action="simulador.html">
+                <h3>Ejercicio 42</h3>
+                <p class="kira">¿Que sucede si intercambiamos devolver un valor en una funcion sin retorno?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) Muestra un mensaje de error.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) Devuelve 0 automaticamente.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) Devuelve NULL.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) No sucede nada,pero no devuelve ningun valor.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_42()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu42"></p>
+        </section>
+        <section id="ejercicio43" class="sim">
+            <form class="ra" id="quesForm43" action="simulador.html">
+                <h3>Ejercicio 43</h3>
+                <img src="../img/img17.png" alt="Imagen no encontrada" width="530px" class="pse">
+                <p class="kira">Seleccione la opcion correcta:</p>
+                <div class="simu">
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. x=3000, y=4000, z=7000</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. x=2700, y=4500, z=7800</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. x=2599, y=4163, z=7705</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. x=2852, y=4404, z=7348</span>
+                    </div>
+                </div>
+                <button class="as" type="button" onclick="Ejercicio_43()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu43"></p>
+        </section>
+        <section id="ejercicio44" class="sim">
+            <form class="ps" id="quesForm44" action="simulador.html" >
+                <h3>Ejercicio 44</h3>
+                <p class="kira">¿Cual es la principal diferencia entre una estructura condicional simple y una estructura condicional compuesta?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span class="ni">a. La estructura condicional compuesta es siempre mas eficiente que la simple.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. No hay diferencias significativas entre ambas estructuras.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span class="ni">c. Una estructura sondicional compuesta combina multiples condiciones mediante operadores logicos, mientras que una condicional simple evalua solo una condicion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Una estructura condicional simple puede tener mas de dos condiciones, mientras que la compuesta solo tiene una.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_44()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu44"></p>
+        </section>
+        <section id="ejercicio45" class="sim">
+            <form class="ps" id="quesForm45" action="simulador.html">
+                <h3>Ejercicio 45</h3>
+                <p class="kira">¿Que se entiende por una condicion anidada en logica de programacion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Es una tecnica para reducir el numero de condiciones en un programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Es cuando una condicion condicional se encuentra dentro de otra condicion condicional.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Es una condicion que contiene multiples operadores logicos en una sola linea.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Es cuando una condicion se repite varias veces dentro de un bucle.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_45()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu45"></p>
+        </section>
+        <section id="ejercicio46" class="sim">
+            <form class="ps" id="quesForm46" action="simulador.html">
+                <h3>Ejercicio 46</h3>
+                <p class="kira">En logica de programacion, ¿Que operador tiene mayor prioridad al evaluar una expresion condicional compleja?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. XOR</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. NOT</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. OR</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. AND</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_46()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu46"></p>
+        </section>
+        <section id="ejercicio47" class="sim">
+            <form class="ps" id="quesForm47" action="simulador.html">
+                <h3>Ejercicio 47</h3>
+                <p class="kira">¿Cual es la diferencia principal entre un algoritmo iterativo y uno recursivo?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span class="ni">a. Un algortimo iterativo no puede resolver problemas complejos, mientras que uno recursivo si.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Un algoritmo iterativo repite un bloque de codigo utilizando bucles, mientras que un algoritmo recursivo mismo para resolver subproblemas .</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span class="ni">c. Un algoritmo recursivo es mas facil de entender y programar que uno iterativo.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Un algoritmo iterativo siempre es mas eficiente que uno recursivo.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_47()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu47"></p>
+        </section>
+        <section id="ejercicio48" class="sim">
+            <form class="ps" id="quesForm48" action="simulador.html">
+                <h3>Ejercicio 48</h3>
+                <p class="kira">¿Cual es la definicion correcta de un algoritmo?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Un lenguaje de programacion que se utiliza para desarrollar software.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Un conjunto de pasos o instrucciones secuenciales que resuelven un problema.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Una estructura de datos que almacena informacion de manera eficiente.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Un programa que ejecuta tareas automaticamente.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_48()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu48"></p>
+        </section>
+        <section id="ejercicio49" class="sim">
+            <form class="ps" id="quesForm49" action="simulador.html">
+                <h3>Ejercicio 49</h3>
+                <p class="kira">¿Que caracteristica NO pertenece a los algoritmos?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Debe tener pasos bien definidos.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Debe ser finito.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Requiere multiples lenguajes de programacion para su implementacion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Debe producir un resultado.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_49()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu49"></p>
+        </section>
+        <section id="ejercicio50" class="sim">
+            <form class="bc" id="quesForm50" action="simulador.html">
+                <h3>Ejercicio 50</h3>
+                <p class="kira">Si tienes la funcion <img src="../img/img18.png" alt="Imagen no encontrada" width="290px">,¿Que hara si la llamas como <img src="../img/img19.png" alt="Imagen no encontrada" width="140px">?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) Asignara el valor 10 a resultado</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) Asignara el valor 0 a resultado</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) Genera un error</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 15</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_50()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu50"></p>
+        </section>
+        <section id="ejercicio51" class="sim">
+            <form class="bc" id="quesForm51" action="simulador.html">
+                <h3>Ejercicio 51</h3>
+                <p class="kira">¿Cual es la forma correcta de almacenar el resultado de una funcion con retorno?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) resultado <- nombreFuncion(par1,par2)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) resultado = nombreFuncion(par1,par2)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) ejecutar resultado = nombreFuncion(par1,par2)</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) retorno resultado = nombreFuncion(par1,par2)</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_51()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu51"></p>
+        </section> 
+        <section id="ejercicio52" class="sim">
+            <form class="ls" id="quesForm52" action="simulador.html">
+                <h3>Ejercicio 52</h3>
+                <img src="../img/img20.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 9765625</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 50</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 500</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 5</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_52()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu52"></p>
+        </section>
+        <section id="ejercicio53" class="sim">
+            <form class="ps" id="quesForm53" action="simulador.html">
+                <h3>Ejercicio 53</h3>
+                <p class="kira">¿Cual es el proposito de un bucle en la programacion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Declarar una variable que pueda ser utilizada en todo el programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Ropmer la ejecucion de un programa en varias partes.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Almacenar grandes cantidades de datos en la memoria.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Repetir un conjunto de instrucciones hasta que se cumpla una condicion.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_53()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu53"></p>
+        </section>
+        <section id="ejercicio54" class="sim">
+            <form class="ps" id="quesForm54" action="simulador.html">
+                <h3>Ejercicio 54</h3>
+                <p class="kira">En el desarrollo de modelos abstractos, ¿Cual es el primer paso para resolver un problema?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Implementar una solucion directamente en codigo.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Probar la solucion en distintos escenarios.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Analizar y comprender el problema en profundidad.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Optimizar el codigo para rendimiento.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_54()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu54"></p>
+        </section>
+        <section id="ejercicio55" class="sim">
+            <form class="ps" id="quesForm55" action="simulador.html">
+                <h3>Ejercicio 55</h3>
+                <p class="kira">¿Que resultado produce esta funcion al llamarla con <img src="../img/img21.png" alt="Imagen no encontrada" width="140px">? <img src="../img/img22.png" alt="Imagen no encontrada" width="310px"></p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 10</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 20</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 25</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 40</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_55()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu55"></p>
+        </section>
+        <section id="ejercicio56" class="sim">
+            <form class="tn" id="quesForm56" action="simulador.html">
+                <h3>Ejercicio 56</h3>
+                <img src="../img/img23.png" alt="Imagen no encontrada" width="360px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 12</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 18</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 21</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 6</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_56()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu56"></p>
+        </section> 
+        <section id="ejercicio57" class="sim">
+            <form class="tn" id="quesForm57" action="simulador.html">
+                <h3>Ejercicio 57</h3>
+                <img src="../img/img24.png" alt="Imagen no encontrada" width="360px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 6</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 5</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 12</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 3</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_57()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu57"></p>
+        </section> 
+        <section id="ejercicio58" class="sim">
+            <form class="ps" id="quesForm58" action="simulador.html">
+                <h3>Ejercicio 58</h3>
+                <p class="kira">En el contexto de un programa, ¿Cual es el papel principal de una variable?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Almacenar solo texto para mostrarse en la interfaz.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Proveer una referencia inalterable a los datos.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Guardar valores temporales que se pueden modificar.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Asegurar que todos los datos se mantengan constantes.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_58()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu58"></p>
+        </section> 
+        <section id="ejercicio59" class="sim">
+            <form class="fn" id="quesForm59" action="simulador.html">
+                <h3>Ejercicio 59</h3>
+                <img src="../img/img25.png" alt="Imagen no encontrada" width="330px" class="pse">
+                <div class="simu">
+                    <p class="kira">Seleccione la opcion correcta:</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. a) 4 3 2 1</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. b) 1 2 3 4</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. c) 1 2 3 4 5 </span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. d) 5 4 3 2 1</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_59()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu59"></p>
+        </section>  
+        <section id="ejercicio60" class="sim">
+            <form class="ps" id="quesForm60" action="simulador.html">
+                <h3>Ejercicio 60</h3>
+                <p class="kira">¿Que es un compilador en el contexto de la programacion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Un programa que traduce el codigo fuente escrito en un lenguaje de alto nivel a codigo maquina ejecutable.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Un bloque de codigo que maneja errores durante la ejecucion de un programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Un conjunto de herramienta utilizadas para escribir y ejecutar programas.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Una interfaz que permite al programador escribir codigo de manera mas eficiente.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_60()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu60"></p>
+        </section> 
+        <section id="ejercicio61" class="sim">
+            <form class="ps" id="quesForm61" action="simulador.html">
+                <h3>Ejercicio 61</h3>
+                <p class="kira">¿Cual es el proposito de una funcion en programacion?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Implementar una estructura de control como un bucle o condicion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Definir una variable que almacena un valor unico.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Encapsular un conjunto de instrucciones que realizan una tarea especifica y pueden ser reutilizadas.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Organizar los datos de entrada de un programa.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_61()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu61"></p>
+        </section> 
+        <section id="ejercicio62" class="sim">
+            <form class="bc" id="quesForm62" action="simulador.html">
+                <h3>Ejercicio 62</h3>
+                <p class="kira">¿Cual es la salida de esta funcion si llamamos a <img src="../img/img26.png" alt="Imagen no encontrada" width="120px">? <img src="../img/img27.png" alt="Imagen no encontrada" width="340px"></p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 8</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 16</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 12</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 20</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_62()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu62"></p>
+        </section> 
+        <section id="ejercicio63" class="sim">
+            <form class="bc" id="quesForm63" action="simulador.html">
+                <h3>Ejercicio 63</h3>
+                <p class="kira">En un sistema de calculo de horas trabajadas, si un empleado trabaja 8 horas durante 5 dias, ¿Cuantas horas en total trabajo en la semana?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 45 horas</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 40 horas</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 35 horas</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 50 horas</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_63()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu63"></p>
+        </section> 
+        <section id="ejercicio64" class="sim">
+            <form class="ps" id="quesForm64" action="simulador.html">
+                <h3>Ejercicio 64</h3>
+                <p class="kira">Si un viaje en tren cuesta $5 por persona y un grupo de 6 personas toma el tren, ¿Cual sera el costo total del viaje?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 40 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 25 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 35 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 30 dolares</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_64()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu64"></p>
+        </section> 
+        <section id="ejercicio65" class="sim">
+            <form class="bc" id="quesForm65" action="simulador.html">
+                <h3>Ejercicio 65</h3>
+                <p class="kira">¿Que operador logico se utiliza para evaluar si dos o mas condiciones son verdaderas al mismo tiempo en una estructura condicional?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. AND</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. XOR</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. OR</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. NOT</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_65()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu65"></p>
+        </section>
+        <section id="ejercicio66" class="sim">
+            <form class="ps" id="quesForm66" action="simulador.html">
+                <h3>Ejercicio 66</h3>
+                <p class="kira">¿Que significa que una variable tenga "ambito local" en un programa?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. Que mantiene su valor durante toda la ejecucion del programa.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. Que se utiliza como paramatro de entrada para una funcion.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. Que solo puede ser utilizada dentro de la funcion o bloque donde fue declarada.</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. Que puede ser accedida desde cualquier parte del programa.</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_66()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu66"></p>
+        </section>
+        <section id="ejercicio67" class="sim">
+            <form class="dm" id="quesForm67" action="simulador.html">
+                <h3>Ejercicio 67</h3>
+                <p class="kira">El siguiente algoritmo verifica si un numero es Par o Impar</p>
+                <img src="../img/img28.png" alt="Imagen no encontrada" width="190px" class="pse">
+                <div class="simu">
+                    <p>Indique la linea o lineas que hace el algoritmo no funcione correctamente</p>
+                    <div class="sec">
+                        <input type="radio" name="option" value="a">
+                        <span>a. 1</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="b">
+                        <span>b. 3</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="c">
+                        <span>c. 3,5</span>
+                    </div>
+                    <div class="sec">
+                        <input type="radio" name="option" value="d">
+                        <span>d. 5</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_67()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu67"></p>
+        </section>
+        <section id="ejercicio68" class="sim">
+            <form class="bc" id="quesForm68" action="simulador.html">
+                <h3>Ejercicio 68</h3>
+                <p class="kira">Una tienda ofrece un descuento del 20% en un producto cuyo precio original es de $50. ¿Cual sera el precio final despues del descuento?</p>
+                <div class="simu">
+                    <div>
+                        <input type="radio" name="option" value="a">
+                        <span>a. 40 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="b">
+                        <span>b. 30 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="c">
+                        <span>c. 45 dolares</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="option" value="d">
+                        <span>d. 35 dolares</span>
+                    </div>
+                </div>
+                <button class="btn" type="button" onclick="Ejercicio_68()">Comprobar Respuesta</button>
+                <button class="rt" type="submit">Regresar</button>
+            </form>
+            <p class="ne" id="respu68"></p>
+        </section> 
+        <section id="ejercicio69">
+            <form class="ls" action="simulador.html">
+                <h3>Ejercicio 69</h3>
+                <p class="kira">Crea un algoritmo como funcion es Pseint o Javascript que permite verificar si un numero cualquiera es perfecto o no</p>
+                <p class="kira">Un numero es perfecto cuando la suma de los divisores incluidos 1 y excluido el propio numero es igual al propio numero.Ejemplo: si el numero es 6, la suma de los divisores de 6 es (1 + 2 + 3), lo que es igual a 6. Por lo tanto, el numero 6 es perfecto</p>
+                <div>
+                    <label class="di" for="num">Numero:</label>
+                    <input type="number" id="num" placeholder="Ingresa un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="Ejercicio_69()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu69">Resultado:</label>
+                    <textarea id="respu69">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio70">
+            <form class="ls" action="simulador.html">
+                <h3>Ejercicio 70</h3>
+                <p class="kira">Escribe un programa que pida al usuario una frase y cuente cuantas palabras tiene. Usa un bucle para recorrer cada letra de la palabra y verificar si es una vocal. Ejemplo: si la frase es "Hola como estas", la respuesta es "3 palabras tiene la frase".</p>
+                <div>
+                    <label for="fare">Frase:</label>
+                    <input type="text" id="fare" placeholder="Ingresa una frase">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="Ejercicio_70()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu70">Resultado:</label>
+                    <textarea id="respu70">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio71" class="sim">
+            <form class="fn" action="./simulador.html">
+                <h3>Ejercicio 71</h3>
+                <p class="kira">Dado un numero, almacena sus digitos en un arreglo presentando la suma de esos digitos</p>
+                <div>
+                    <label for="digisu">Numero:</label>
+                    <input type="text" id="digisu" placeholder="Ingrese un numero">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="Ejercicio_71()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu71">Resultado:</label>
+                    <textarea id="respu71">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+      </main>
+      <script src="../js/ejr-simu.js"></script>
+      <script>
+        // Obtiene el hash de la URL (por ejemplo, #ejercicio1)
+        const hash = window.location.hash;
+    
+        // Oculta todas las secciones
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none'; // Oculta las secciones
+        });
+    
+        // Muestra la sección correspondiente al hash si existe
+        if (hash) {
+            const sectionToShow = document.querySelector(hash);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block'; // Muestra solo esta sección
+            } else {
+                console.warn("Sección no encontrada:", hash); // Mensaje de advertencia si el hash no coincide
+            }
+        }
+    </script>  
+    <footer>
+        <h5>Next Programming - Derechos Reservados <span>Corporacion N.P.</span></h5>
+    </footer> 
+</body>
+</html>

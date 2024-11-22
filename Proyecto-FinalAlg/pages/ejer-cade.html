@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/esti-ejer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Ejercicios de bucles</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="/inter.html">
+                <img src="../img/Orion.jpeg" alt="Imagen no encontrada" width="90px">
+            </a>
+            <h3>Next Programming</h3>
+          </div>
+    </header>
+    <main>
+        <h1>Ejercicios de Cadenas</h1>
+        <section id="ejercicio1" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 1</h3>
+                <p class="kira">Ingresar un nombre y un apellido: Dado un nombre y apellido ingresado presentarlo concatenado: apellido y nombre.</p>
+                <div>
+                    <label for="palab1">Nombre:</label>
+                    <input type="text" id="palab1" placeholder="Ingrese un nombre">
+                </div>
+                <div>
+                    <label for="palab2">Apellido:</label>
+                    <input type="text" id="palab2" placeholder="Ingrese un apellido">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_1()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu1">Resultado:</label>
+                    <textarea id="respu1">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio2" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 2</h3>
+                <p class="kira">Comparar frases: Dada dos frases indicar si son iguales o la primera en mayor o menor que la segunda.</p>
+                <div>
+                    <label for="fras1">Frase:</label>
+                    <input type="text" id="fras1" placeholder="Ingrese un frase">
+                </div>
+                <div>
+                    <label for="fras2">Frase:</label>
+                    <input type="text" id="fras2" placeholder="Ingrese un frase">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_2()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu2">Resultado:</label>
+                    <textarea id="respu2">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio3" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 3</h3>
+                <p class="kira">Ingresar palabra: Ingresar una palabra y crear otra palabra con cada carácter de la primera palabra dejando un espacio entre cada caracter.</p>
+                <div>
+                    <label for="carac1">Palabra:</label>
+                    <input type="text" id="carac1" placeholder="Ingrese una palabra">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_3()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu3">Resultado:</label>
+                    <textarea id="respu3">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio4" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 4</h3>
+                <p class="kira">Dada una frase: Presentar cada carácter con su respectivo código asccii. Para este ejercicio usar una función de javascript que devuelve el código asccii del carácter.</p>
+                <div>
+                    <label for="asci1">Frase:</label>
+                    <input type="text" id="asci1" placeholder="Ingrese una frase">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_4()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu4">Resultado:</label>
+                    <textarea id="respu4">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio5" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 5</h3>
+                <p class="kira">Invertir una palabra: Invertir una frase ingresada por el usuario.</p>
+                <div>
+                    <label for="inver1">Palabra:</label>
+                    <input type="text" id="inver1" placeholder="Ingrese una palabra">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_5()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu5">Resultado:</label>
+                    <textarea id="respu5">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio6" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 6</h3>
+                <p class="kira">Contar vocales en una palabra: Contar cuántas vocales tiene una palabra ingresada por el usuario.</p>
+                <div>
+                    <label for="voc">Palabra:</label>
+                    <input type="text" id="voc" placeholder="Ingrese una palabra">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_6()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu6">Resultado:</label>
+                    <textarea id="respu6">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio7" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 7</h3>
+                <p class="kira">Contar las letras del alfabeto en una palabra: Contar cuántas letras del alfabeto tiene una palabra ingresada por el usuario.</p>
+                <div>
+                    <label for="alf">Palabra:</label>
+                    <input type="text" id="alf" placeholder="Ingrese una palabra">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_7()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu7">Resultado:</label>
+                    <textarea id="respu7">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio8" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 8</h3>
+                <p class="kira">Contar dígitos de una frase: Contar cuántos dígitos tiene una frase ingresada por el usuario.</p>
+                <div>
+                    <label for="figa1">Frase:</label>
+                    <input type="text" id="figa1" placeholder="Ingresar frase">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_8()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu8">Resultado:</label>
+                    <textarea id="respu8">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio9" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 9</h3>
+                <p class="kira">Contar los signos de puntuación en una palabra: Contar cuántos signos de puntuación tiene una palabra ingresada por el usuario.</p>
+                <div>
+                    <label for="punt">Palabra:</label>
+                    <input type="text" id="punt" placeholder="Ingrese una palabra">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_9()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu9">Resultado:</label>
+                    <textarea id="respu9">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+        <section id="ejercicio10" class="sim">
+            <form class="fn" action="./cadenas.html">
+                <h3>Ejercicio 10</h3>
+                <p class="kira">Contar palabras en una frase: Contar cuántas palabras tiene una frase ingresada por el usuario.</p>
+                <div>
+                    <label for="fara1">Frase:</label>
+                    <input type="text" id="fara1" placeholder="Ingrese una frase">
+                </div>
+                <div>
+                    <button class="bot" type="button" onclick="practica_10()">Aceptar</button>
+                    <button class="bot2" type="reset">Cancelar</button>
+                </div>
+                <div>
+                    <label class="ko" for="respu10">Resultado:</label>
+                    <textarea id="respu10">Aqui saldra la respuesta</textarea>
+                    <button class="bot3" type="submit">Regresar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/ejr-cade.js"></script> 
+    <script>
+        // Obtiene el hash de la URL (por ejemplo, #ejercicio1)
+        const hash = window.location.hash;
+    
+        // Oculta todas las secciones
+        document.querySelectorAll('section').forEach(section => {
+            section.style.display = 'none'; // Oculta las secciones
+        });
+    
+        // Muestra la sección correspondiente al hash si existe
+        if (hash) {
+            const sectionToShow = document.querySelector(hash);
+            if (sectionToShow) {
+                sectionToShow.style.display = 'block'; // Muestra solo esta sección
+            } else {
+                console.warn("Sección no encontrada:", hash); // Mensaje de advertencia si el hash no coincide
+            }
+        }
+    </script>
+    <footer>
+        <h5>Next Programming - Derechos Reservados <span>Corporacion N.P.</span></h5>
+    </footer>
+</body>
+</html>
